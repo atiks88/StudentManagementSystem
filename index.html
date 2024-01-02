@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student_management_System</title>
+</head>
+<body>
+
+   <main class="main">
+
+    <section class="info">
+
+        <form id="form">
+            <input aria-label="name" name="name" placeholder="Name" type="text" required>
+            <input aria-label="email" name="email" placeholder="Example@gmail.com" type="text" required>
+            <input aria-label="salary" name="salary" placeholder="Salary" type="number" required>
+            <input aria-label="Company" name="company" placeholder="Company's Name" type="text" required>
+            <select aria-label="role" name="role" aria-placeholder="ROLE" required>
+                <option value="">Select Role</option>
+                <option value="QA">QA</option>
+                <option value="SDE">SDE</option>
+                <option value="product">Product Analyst</option>
+            </select>
+            <select aria-label="gender" name="gender" aria-placeholder="GENDER" required>
+                <option value="">Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+            <button type="submit">ADD EMPLOYEE</button>
+            
+        </form>
+    </section>
+
+    <section class="bord">
+        <table id="table">
+
+            <thead>
+                <tr>
+                    <th>NAME</th>
+                    <th>EMAIL</th>
+                    <th>SALARY</th>
+                    <th>CompanyName</th>
+                    <th>ROLE</th>
+                    <th>GENDER</th>
+                    <th>OPTION</th>
+                </tr>
+            </thead>
+
+            <tbody id="tbody">
+            </tbody>
+            
+        </table>
+    </section>
+
+   </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
